@@ -1,0 +1,77 @@
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsBold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+:root{
+    --cool-gray:#9A9CB2;
+    --cool-gray2:#1b1b1d5b;
+    --charcoal-option: #3A4960;
+    --veronica-btn:#A529FC;
+    --veronica-btn-empty:#8749b480;
+    --charcoal-bg:#2E3949;
+}
+*{
+    box-sizing: border-box;
+    font-family: poppins;
+    color: white;
+}
+body{
+    background-color: var(--charcoal-bg);
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.currentWeather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    gap: 1rem;
+    height: 50%;
+}
+.nextWeatherItem{
+    background-color: #0f1c3170;
+    filter: backdrop(10px);
+    width: fit-content;
+    font-size: 15px;
+    width: 85px;
+    height: 116px;
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+}
+.controls{
+    place-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #0f1c3170;
+}
+.location h3, .location p{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.temp{
+    font-size: 3rem;
+    font-family: poppinsBold;
+}
+.weatherIcon{
+    width: 120px;
+    height: 120px;
+}
+.description{
+    font-size: 1rem;
+}

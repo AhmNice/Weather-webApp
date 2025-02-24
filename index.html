@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="icons/3d/sun.png" type="image/x-icon" width="24px">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wrapper h-screen w-full p-5">
+        <div class="container h-full w-full">
+            <div class="contentHeader relative flex justify-between items-center">
+                <div class="navbar ">
+                    <!-- <div class="icon hover:cursor-pointer"><img src="icons/icons8-menu-50.png" width="24px"></div> -->
+                </div>
+
+               
+
+                <div class="title text-white">Weather Today</div>
+                <div class="calendar"></div>
+            </div>
+            <div class="contentBody h-screen">
+                <div class="currentWeather flex flex-col ">
+                        <div class="location flex items-center gap-5 w-full justify-between pl-5 pr-5">
+                            <h3 class="city"><img src="icons/icons8-city-24.png" alt=""> Lagos</h3>
+                            <p class="country"><img src="icons/icons8-location-24.png" alt=""> Nigeria</p>
+                        </div>
+                        <div class="weatherIcon flex items-center justify-center  ">
+                            <img src="icons/3d/sun-clouds-rain.png" alt="weather icon">
+                        </div>
+                        <div class="weatherDetail text-center">
+                            <h3 class="temp">25</h3>
+                            <p class="description">very Hot today</p>
+                        </div>
+                </div>
+                <div class="nextWeather flex flex-col ">
+                    <div class="nextWeatherHeader flex justify-between items-center">
+                        <div class="flex gap-2 items-center" >
+                            <img src="icons/icons8-clock-24.png" alt="">
+                            <h3 class="text-white">Hourly Forecast</h3>
+                        </div>
+                        <div class="flex gap-2 items-center" >
+                            <h3 class="text-white">Next 7 Days</h3>
+                            <img src="icons/icons8-arrow-right-24.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nextWeatherBody grid place-content-center gap-6 w-full">
+                        <div class="flex items-center justify-center gap-2 p-5">
+                            <div class="nextWeatherItem flex justify-between justify-center items-center w-44 items-center rounded-xl ">
+                                <div class="flex p-2 items-center flex-col ">
+                                    <img class="w-12" src="icons/3d/sun-clouds-rain.png" alt="">
+                                    <p class="time text">4pm</p>
+                                    <h3 class="text-white text-xl ty-weather">12</h3>
+                                </div>
+                        </div>
+                        <div class="nextWeatherItem flex justify-between justify-center items-center w-44 items-center rounded-xl ">
+                                <div class="flex p-2 items-center flex-col ">
+                                    <img class="w-12" src="icons/3d/sun-clouds-rain.png" alt="">
+                                    <p class="time text">4pm</p>
+                                    <h3 class="text-white text-xl ty-weather">12</h3>
+                                </div>
+                        </div>
+                        <div class="nextWeatherItem flex justify-between justify-center items-center w-44 items-center rounded-xl ">
+                                <div class="flex p-2 items-center flex-col ">
+                                    <img class="w-12" src="icons/3d/sun-clouds-rain.png" alt="">
+                                    <p class="time text">4pm</p>
+                                    <h3 class="text-white text-xl ty-weather">12</h3>
+                                </div>
+                        </div>
+                        <div class="nextWeatherItem flex justify-between justify-center items-center w-44 items-center rounded-xl ">
+                                <div class="flex p-2 items-center flex-col ">
+                                    <img class="w-12" src="icons/3d/sun-clouds-rain.png" alt="">
+                                    <p class="time text">4pm</p>
+                                    <h3 class="text-white text-xl ty-weather">12</h3>
+                                </div>
+                        </div>
+                        </div>
+                </div>
+                <div class="controls grid grid-cols-4 rounded-full p-3">
+                    <div class="navIcon flex items-center justify-center">
+                        <img src="icons/icons8-search-32.png" alt="">
+                    </div>
+                    <div class="navIcon flex items-center justify-center">
+                        <img src="icons/icons8-search-32.png" alt="">
+                    </div>
+                    <div class="navIcon flex items-center justify-center">
+                        <img src="icons/icons8-search-32.png" alt="">
+                    </div>
+                    <div class="navIcon flex items-center justify-center">
+                        <img src="icons/icons8-search-32.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
